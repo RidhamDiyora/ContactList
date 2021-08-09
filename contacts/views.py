@@ -12,6 +12,7 @@ def index(request):
         search_input = ''
     return render(request,'index.html',{'contacts':contacts,'search_input':search_input})
 
+# Add contact view
 def addContact(request):
     if request.method == 'POST':
         new_contact = Contact(
